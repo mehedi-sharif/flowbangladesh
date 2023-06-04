@@ -101,7 +101,7 @@ h3 {
 
 .header-title-wrapper {
   max-width: 930px;
-  margin: 40px auto 160px;
+  margin: 40px auto;
   position: relative;
 }
 
@@ -126,14 +126,14 @@ h3 {
   height: 146px;
   background-color: #c0fe71;
   position: absolute;
-  top: 16%;
+  top: 23%;
   bottom: auto;
   left: 25%;
   right: auto;
   transform: rotate(-18deg);
 }
 
-.heading {
+.header-title {
   z-index: 100;
   position: relative;
 }
@@ -156,6 +156,7 @@ h3 {
   background-color: rgba(255, 255, 255, .1);
   border: 1px solid #000;
   padding: 26px 15px 40px;
+  text-decoration: none;
   transition: all .25s;
 }
 
@@ -314,6 +315,7 @@ h3 {
 
 .webflow-mark {
   max-width: 100px;
+  border-radius: 100%;
 }
 
 .event-sessions {
@@ -363,6 +365,14 @@ h3 {
   color: #000;
 }
 
+.speaker-title._3 {
+  max-width: 700px;
+}
+
+.speaker-title.last {
+  margin-bottom: 0;
+}
+
 .navbar-fixed {
   z-index: 5000;
   transition: all .3s;
@@ -375,11 +385,11 @@ h3 {
 }
 
 .navbar-fixed-inner {
-  max-width: 690px;
+  max-width: 750px;
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   text-align: center;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, .8);
   border-radius: 80px;
   margin-left: auto;
   margin-right: auto;
@@ -465,7 +475,7 @@ h3 {
 }
 
 .speakers {
-  padding: 80px 30px 180px;
+  padding: 80px 30px 120px;
   position: relative;
 }
 
@@ -624,6 +634,10 @@ h3 {
   top: 20px;
 }
 
+.social-links.hide {
+  display: none;
+}
+
 .organizers {
   padding: 40px 30px 100px;
   position: relative;
@@ -690,6 +704,18 @@ h3 {
   display: flex;
 }
 
+.moar-map-link.buy-ticket {
+  text-align: center;
+  justify-content: flex-start;
+}
+
+.moar-map-link.header-buy-ticket {
+  max-width: 200px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .text-block {
   color: #000;
   margin-right: 10px;
@@ -709,6 +735,109 @@ h3 {
   margin-bottom: 20px;
 }
 
+.link-block {
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 12px 14px;
+  position: relative;
+  top: -5px;
+  left: -5px;
+}
+
+.div-block {
+  border: 1px solid #000;
+  margin-top: 12px;
+  display: inline-block;
+  position: relative;
+}
+
+.moar-sponsored-logo {
+  max-width: 60px;
+}
+
+.flowmania {
+  max-width: 146px;
+}
+
+.guest-list {
+  z-index: 100;
+  grid-column-gap: 50px;
+  grid-row-gap: 80px;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: relative;
+}
+
+.guest {
+  text-align: center;
+}
+
+.guest-img {
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.guest-name {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.guest-designation {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.guests {
+  padding: 80px 30px 120px;
+  position: relative;
+}
+
+.ticket-alert-modal {
+  z-index: 10000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(196, 244, 138, .92);
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.modal-inner {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  border: 1px solid #000;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 24px;
+  display: flex;
+}
+
+.ticket-alert-modal-text {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 37px;
+}
+
+.close-modal {
+  cursor: pointer;
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 5px 6px;
+}
+
+.sovware-logo {
+  max-width: 150px;
+}
+
 @media screen and (max-width: 991px) {
   .header {
     padding-bottom: 99px;
@@ -723,7 +852,7 @@ h3 {
   }
 
   .header-title-wrapper {
-    margin-bottom: 100px;
+    margin-bottom: 40px;
   }
 
   .header-title-vector-one {
@@ -742,7 +871,7 @@ h3 {
     left: 28%;
   }
 
-  .heading {
+  .header-title {
     font-size: 50px;
     line-height: 60px;
   }
@@ -830,6 +959,30 @@ h3 {
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  .moar-map-link.header-buy-ticket {
+    margin-bottom: 60px;
+  }
+
+  .div-block {
+    display: inline-block;
+  }
+
+  .guest-list {
+    grid-row-gap: 100px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .guests {
+    padding-top: 20px;
+    padding-bottom: 120px;
+  }
+
+  .footer-organiser-block {
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -871,6 +1024,10 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .footer-credit.hide {
+    display: none;
+  }
+
   .social-links {
     top: 0;
   }
@@ -893,15 +1050,30 @@ h3 {
     margin-top: 0;
   }
 
-  .moar-logo {
+  .moar-logo, .moar-sponsored-logo, .tinyflow-logo {
+    max-width: 200px;
+  }
+
+  .guest-list {
+    max-width: 350px;
+    grid-template-columns: 1fr;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ticket-alert-modal {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .sovware-logo {
     max-width: 200px;
   }
 }
 
 @media screen and (max-width: 479px) {
   .header {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 15px 15px 80px;
   }
 
   .header-inner {
@@ -913,21 +1085,22 @@ h3 {
   .navigation {
     margin-left: -15px;
     margin-right: -15px;
+    padding: 12px 0;
   }
 
   .nav-link {
-    padding-top: 3px;
-    padding-bottom: 3px;
-    display: block;
+    padding: 3px 12px;
+    display: inline-block;
   }
 
   .nav-link.fixed {
     font-size: 12px;
+    display: inline-block;
   }
 
-  .heading {
-    font-size: 46px;
-    line-height: 54px;
+  .header-title {
+    font-size: 36px;
+    line-height: 50px;
   }
 
   .header-info-list {
@@ -935,6 +1108,10 @@ h3 {
     grid-template-columns: 1fr;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .header-arrow-down {
+    bottom: -60px;
   }
 
   .sponsors {
@@ -949,6 +1126,7 @@ h3 {
 
   .section-heading {
     font-size: 30px;
+    line-height: 30px;
   }
 
   .sponsor-block {
@@ -972,11 +1150,13 @@ h3 {
 
   .navbar-fixed {
     bottom: 0;
-    transform: translate(0);
+    transform: translate(0, 200px);
   }
 
   .navbar-fixed-inner {
     border-radius: 0;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 
   .speaker-list {
@@ -1020,9 +1200,31 @@ h3 {
     grid-template-rows: auto auto;
     grid-template-columns: 1fr;
   }
+
+  .moar-map-link.header-buy-ticket {
+    margin-bottom: 40px;
+  }
+
+  .guest-list {
+    grid-row-gap: 60px;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 1fr;
+  }
+
+  .guests {
+    padding-bottom: 100px;
+  }
 }
 
-#w-node-_9f6f147a-7d66-3ad7-8061-b6ba0022d131-0ad6daa6, #w-node-c7f21c20-ae4c-415a-3c62-376f1502300a-0ad6daa6, #w-node-_0c13e6e4-ace6-2983-f973-e80b3f31cdfb-0ad6daa6, #w-node-_7b321364-93d6-83ef-caf3-691af0b2a325-0ad6daa6, #w-node-_3f4617be-0fed-86a2-ea31-c36905931515-0ad6daa6, #w-node-c6fcb88e-a0a6-35b8-aaa1-188f5e4a5973-0ad6daa6, #w-node-_801f6a01-9fe8-ad98-64c3-4233d816e5c1-0ad6daa6, #w-node-ceef1aa2-5ad0-8ee8-a73c-600666dd82d4-0ad6daa6, #w-node-dcc43e47-f666-a043-febc-1f703c699a58-0ad6daa6, #w-node-_359e7415-4d82-cb62-e9d3-c816bfe27ed4-0ad6daa6, #w-node-d795e441-2faa-c4d0-fca8-85e2aaf73513-0ad6daa6, #w-node-_0ef80bd3-14e5-93d3-14a9-7fe3756eada0-0ad6daa6, #w-node-_7fc381ca-4ae5-b682-cd78-9a6e6fd81a8f-0ad6daa6, #w-node-_6ed31e34-93d6-5bd7-2669-3140666ae28a-0ad6daa6, #w-node-c148aa85-e33b-4d02-1404-1624761b97e1-0ad6daa6, #w-node-f9223031-6e0d-150e-6c24-3ddd8861cb1c-0ad6daa6, #w-node-_39137797-ecdb-25da-e8f9-9f61bde1a997-0ad6daa6, #w-node-_9b22891f-ba3f-8956-cf4d-e9c079e1b327-0ad6daa6, #w-node-_57ea1b83-3d52-4fe2-c8e9-1a507f4972e4-0ad6daa6, #w-node-_6e038b1c-0fd2-4a7e-a37c-7f8101508b26-0ad6daa6, #w-node-efc6a6a6-fe3e-0482-e729-981b3c822ec5-0ad6daa6, #w-node-b07e3882-2d93-0116-29de-71361fae2583-0ad6daa6, #w-node-ec8b8ee5-005e-5459-37c4-0a84095a77d5-0ad6daa6, #w-node-e7e2e980-99fb-7779-f2bc-4eeb74689665-0ad6daa6, #w-node-f826efea-1371-b2fa-a89d-64b12c08f85b-0ad6daa6, #w-node-_5ded349f-4297-30f5-dc98-7be968ff999d-0ad6daa6, #w-node-f19fb7be-95e4-8393-b1fe-cc0dbd88739b-0ad6daa6, #w-node-_35e7ba44-8f2c-491c-c9a3-0dddc9688ce8-0ad6daa6 {
+#w-node-_3f4617be-0fed-86a2-ea31-c36905931515-0ad6daa6, #w-node-c6fcb88e-a0a6-35b8-aaa1-188f5e4a5973-0ad6daa6, #w-node-_801f6a01-9fe8-ad98-64c3-4233d816e5c1-0ad6daa6, #w-node-ceef1aa2-5ad0-8ee8-a73c-600666dd82d4-0ad6daa6, #w-node-dcc43e47-f666-a043-febc-1f703c699a58-0ad6daa6, #w-node-_359e7415-4d82-cb62-e9d3-c816bfe27ed4-0ad6daa6, #w-node-d795e441-2faa-c4d0-fca8-85e2aaf73513-0ad6daa6, #w-node-_0ef80bd3-14e5-93d3-14a9-7fe3756eada0-0ad6daa6, #w-node-d8671206-9c92-0892-eca6-bdb3eed02f29-0ad6daa6, #w-node-_4e59c9ac-c293-db93-67dc-5e82984fbdcb-0ad6daa6, #w-node-_8d1d7b8b-b31f-626d-2784-7e009702318a-0ad6daa6, #w-node-_7fc381ca-4ae5-b682-cd78-9a6e6fd81a8f-0ad6daa6, #w-node-_6ed31e34-93d6-5bd7-2669-3140666ae28a-0ad6daa6, #w-node-a2b3080c-56e2-c694-36b3-9891dbfa057d-0ad6daa6, #w-node-c148aa85-e33b-4d02-1404-1624761b97e1-0ad6daa6, #w-node-f9223031-6e0d-150e-6c24-3ddd8861cb1c-0ad6daa6, #w-node-_39137797-ecdb-25da-e8f9-9f61bde1a997-0ad6daa6, #w-node-f6deb5d5-d203-72cd-f7b0-5002c8065cff-0ad6daa6, #w-node-_550f19a6-6b0a-38a7-3d19-b5ce033cbf36-0ad6daa6, #w-node-d7ed82ca-8376-9796-aba0-d57ac6696e5b-0ad6daa6, #w-node-a5658943-1592-dd74-eb9e-897109b8b552-0ad6daa6, #w-node-_3727e5c9-5ade-4e53-2cde-72ec438562eb-0ad6daa6, #w-node-_898fef59-8c19-2eb5-f14f-34d2e491abad-0ad6daa6, #w-node-ce3026c7-ab30-1071-b823-2223535a62e7-0ad6daa6, #w-node-_3208e698-13fb-9aed-82dd-ed09eb0493eb-0ad6daa6, #w-node-_5d3a8cc6-51f0-d2a3-d50c-4a00bb9988f9-0ad6daa6, #w-node-_9b22891f-ba3f-8956-cf4d-e9c079e1b327-0ad6daa6, #w-node-_57ea1b83-3d52-4fe2-c8e9-1a507f4972e4-0ad6daa6, #w-node-_6e038b1c-0fd2-4a7e-a37c-7f8101508b26-0ad6daa6, #w-node-efc6a6a6-fe3e-0482-e729-981b3c822ec5-0ad6daa6, #w-node-b07e3882-2d93-0116-29de-71361fae2583-0ad6daa6, #w-node-ec8b8ee5-005e-5459-37c4-0a84095a77d5-0ad6daa6, #w-node-e7e2e980-99fb-7779-f2bc-4eeb74689665-0ad6daa6, #w-node-f1a9648a-d17c-e76a-1355-104aa6c4b435-0ad6daa6, #w-node-f826efea-1371-b2fa-a89d-64b12c08f85b-0ad6daa6, #w-node-_5ded349f-4297-30f5-dc98-7be968ff999d-0ad6daa6 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-f19fb7be-95e4-8393-b1fe-cc0dbd88739b-0ad6daa6 {
+  grid-area: span 2 / span 1 / span 2 / span 1;
+}
+
+#w-node-_35e7ba44-8f2c-491c-c9a3-0dddc9688ce8-0ad6daa6 {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
