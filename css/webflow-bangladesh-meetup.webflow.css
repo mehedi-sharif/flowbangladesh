@@ -320,7 +320,7 @@ h3 {
 }
 
 .event-sessions {
-  padding: 100px 30px 120px;
+  padding: 100px 30px 70px;
   position: relative;
   overflow: hidden;
 }
@@ -486,7 +486,7 @@ h3 {
   grid-row-gap: 0px;
   border-bottom: 1px solid #000;
   border-right: 1px solid #000;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   position: relative;
 }
 
@@ -495,26 +495,31 @@ h3 {
   border: 1px #000;
   border-style: solid none none solid;
   align-items: center;
-  padding: 15px;
+  padding: 20px 15px;
   text-decoration: none;
   transition: all .3s;
   display: flex;
 }
 
 .attendie-info:hover {
-  background-color: #6789f0;
+  background-color: #c0d4f7;
 }
 
 .attendie-info.right-border {
   border-right-style: solid;
 }
 
+.attendie-info.hide {
+  display: none;
+}
+
 .attendie-name {
   color: #000;
   margin-bottom: 0;
-  font-size: 12px;
+  margin-left: 10px;
+  font-size: 16px;
   font-weight: 500;
-  line-height: 16px;
+  line-height: 21px;
 }
 
 .attendies {
@@ -711,11 +716,15 @@ h3 {
 
 .moar-map-link.buy-ticket {
   text-align: center;
+  cursor: not-allowed;
   justify-content: flex-start;
 }
 
 .moar-map-link.header-buy-ticket {
-  max-width: 200px;
+  max-width: 290px;
+  text-align: center;
+  cursor: not-allowed;
+  justify-content: center;
   margin-bottom: 100px;
   margin-left: auto;
   margin-right: auto;
@@ -925,6 +934,14 @@ h3 {
   left: 0%;
   right: 0%;
   transform: translate(10px, 10px);
+}
+
+.header-button-text {
+  color: #000;
+  margin-right: 0;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 24px;
 }
 
 @media screen and (max-width: 991px) {
