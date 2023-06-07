@@ -1335,8 +1335,17 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .moar-map-link.buy-ticket {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .moar-map-link.header-buy-ticket {
     margin-bottom: 40px;
+  }
+
+  .text-block.participant-text {
+    font-size: 14px;
   }
 
   .guest-list {
